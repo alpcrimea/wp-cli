@@ -12,7 +12,7 @@ class Post_Command extends \WP_CLI\CommandWithDBObject {
 	/**
 	 * Create a post.
 	 *
-	 * @synopsis [<filename>] --<field>=<value> [--edit] [--porcelain]
+	 * @synopsis [<filename>] --<field>=<value> --post_content_filtered=<value> [--edit] [--porcelain]
 	 */
 	public function create( $args, $assoc_args ) {
 		if ( ! empty( $args[0] ) ) {
